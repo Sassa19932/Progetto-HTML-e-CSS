@@ -1,6 +1,9 @@
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    transition: 0.3s;
 }
 /*Body styling*/
 body{
@@ -12,30 +15,40 @@ body{
 /*Container margin*/
 .container{
     margin: 0 auto;
-    padding: 3rem;
+    padding: 0 3rem;
 }
 /*headings*/
 h1,h2{
     text-align: center;
-    font-size:2rem;
 }
 
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
 /*header styling*/
 header{
     background-color: #f9f9f9;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 2rem;
 }
 /*Information styling*/
-.Informazionipersonali, .Istruzione, .Hardskill, .Softskill{
-    margin-bottom: 1rem;
+.Informazioni-personali, .istruzione, .Hard-skill, .Soft-skill, .Hobby, footer{
+    margin-top: 1rem;
 }
 
 ul{
     list-style: none;
     padding: 0;
 }
-
+ .foto-profilo{
+    background-color: #000000;
+    padding: 0.5rem;
+    border-radius: 60%;
+    height: 10rem;
+    width:10rem;
+}
 /* social media icons styling */
 .social-icons {
     font-size: 1.5rem;
@@ -44,7 +57,7 @@ ul{
 .social-icons li{
     display: inline;
 }
-.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin-in:hover, .fa-artstation:hover {
+.fa-instagram:hover, .fa-twitter:hover, .fa-linkedin-in:hover, .fa-artstation:hover, .fa-github:hover {
    color: blue;
 }
 .fa-brands {
@@ -57,7 +70,10 @@ ul{
     background-color: #ddd; 
   }
 
-  .skills {
+  .skills-html, .skills-css, .skills-Cplusplus, .skills-python, .skills-Github, .skills-photoshop, 
+  .skills-figma, .skills-Blender, .skills-ue4, .skills-inglese, .skills-creatività, .skills-autonomia,
+  .skills-work, .skills-solving, .skills-resistenza, .skills-obiettivi, .skills-dettagli, .skills-rapporti,
+  .skills-ascoltare{
     text-align: right;  
     color: white; 
   }
@@ -66,29 +82,30 @@ ul{
     color: #000000; 
   }
   /*gradient styling*/
-  .html, .Github, .creatività, .obiettivi, .ascoltare {width: 90%; background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
-  .css, .Blender, .ue4, .inglese, .work, .solving, .resistenza, .rapporti{width: 80%; background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
-  .Cplusplus{width:50%; background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
-  .python{width:30%; background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
-  .photoshop, .figma, .autonomia, .dettagli{width:100%; background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
+  .skills-html, .skills-Github, .skills-creatività, .skills-obiettivi, .skills-ascoltare {width: 90%; background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
+  .skills-css, .skills-Blender, .skills-ue4, .skills-inglese,  .skills-work, .skills-solving, .skills-resistenza, .skills-rapporti{width: 80%; background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
+  .skills-Cplusplus{width:50%; background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
+  .skills-python{width:30%; background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
+  .skills-photoshop, .skills-figma, .skills-autonomia, .skills-dettagli{width:100%; background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
 /* footer styling */
-footer {
-    background-color: #000000;
+#footer {
     text-align: center;
-    margin-top: 1rem;
-    color: white;
-    padding: 0.5rem;
+    clear: both;
+    background-color: #000000;
+    padding: 1rem;
+    color:#ffffff;
 }
 
-footer p{
-    font-weight: bold;
+#footer p{
     font-size: 1rem;
+    font-weight: bold;
 }
+
 /*media*/
 @media screen and (max-width:960px){
     .container{
         margin: 0 auto;
-        padding: 2rem;
+        padding: 0 2rem;
         line-height: 1.2;
     }
     .fa-brands{
@@ -97,42 +114,67 @@ footer p{
     
     }
 
-    @media screen and (max-width:460px){
+    @media screen and (max-width:796px){
         .fa-brands{
             color: blue;
-            padding: 0 0.5rem;
+            padding: 0 0.3rem;
         }
 
-        h1,h2, .social-icons{
-            font-size: 1.5rem;
+        h1 {
+            font-size: 2.5rem;
         }
+
         ul{
             font-size: 1rem;
         }
-
-        footer p{
+        .foto-profilo {
+            width: 5rem;
+            height: 5rem;
+        }
+        li, .social-icons{
+            margin-top: 0.5rem;
+        }
+        #footer p{
             font-size: 0.8rem;
         }
         }
     
-        @media screen and (max-width:360px){
-            .container{
-                margin: 0 auto;
-                padding: 1rem;
-                line-height: 1.2;
-            }
+        @media screen and (max-width:596px){
             .fa-brands{
                 color: blue;
             }
-            
-            h1,h2, .social-icons{
-                font-size: 1rem;
+            h1{
+            font-size: 2rem;
             }
+
+            h2{
+                font-size: 1.5rem;
+                }
+            
             ul{
                 font-size: 0.8rem;
             }
-    
-            footer p{
-                font-size: 0.7rem;
+            .foto-profilo, .social-icons{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 1rem;
             }
+        }
+            @media screen and (max-width:396px){
+                .fa-brands{
+                    color: blue;
+                    font-size: 1.5rem;
+                    padding: 0 0.3rem;
+                }
+                h1{
+                font-size: 1.5rem;
+                }
+    
+                h2{
+                    font-size: 1rem;
+                    }
+                #footer p{
+                    font-size: 0.6rem;
+                }
             }
