@@ -16,14 +16,14 @@
   <meta name=”twitter:title” content=”LunaFutura-FrontendPortfolio”>
   <meta name=”twitter:description” content=”Portfolio_come_sviluppatore_front_end_dove_ci_sono_tutti_i_miei_siti_web_realizzati_per_varie_aziende”>
   <meta name=”twitter:creator” content=”@Samanta_Mancini”>
-  <meta name=”twitter:image” content=”https://sassa19932.github.io/Progetto-HTML-e-CSS/assets/CSS/luna.jpg”>
+  <meta name=”twitter:image” content=”https://sassa19932.github.io/Progetto-HTML-e-CSS/assets/img/luna.jpg”>
   <!--meta open graph-->
   <meta property="og:description" content="Portfolio_come_sviluppatore_frontend_dove_ci_sono_tutti_i_miei_siti_web_realizzati_per_varie_aziende">
   <meta property="og:locale" content="it_IT">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sassa19932.github.io/Progetto-HTML-e-CSS/" />
   <meta property="og:site_name" content="LunaFutura-FrontendPortfolio" />
-  <meta property="og:image" content="https://sassa19932.github.io/Progetto-HTML-e-CSS/assets/CSS/luna.jpg">
+  <meta property="og:image" content="https://sassa19932.github.io/Progetto-HTML-e-CSS/assets/img/luna.jpg">
   <meta property="og:title" content="Luna Futura - Front end Portfolio" />
   <!--Link canonico-->
   <link rel="canonical" href="https://sassa19932.github.io/Progetto-HTML-e-CSS/">
@@ -55,17 +55,19 @@
       </div>
       </nav>
       <header id="home">
-      <div class="container">
-       <h1>Ciao, sono <span>Samanta.</span><br>
-          <span> Junior Frontend</span> Developer</h1>
-       <a class="button" href="CV.html">Vedi Curriculum</a>
-      </div>
+          <div class="container">
+          <h1 class="titolo-header">Ciao, sono <span>Samanta.</span><br>
+             <span> Junior Frontend</span> Developer</h1>
+             <a class="button" href="CV.html">Vedi Curriculum</a>
+            </div>
        </header>
-     
       <main>
       <section id="About">
+        <div class="row">
+          <div class="column">
         <h3>About me</h3>
-        <p>Ciao sono Samanta e sono una sviluppatrice creativa.<br>
+        <img src="assets/img/foto.jpg" class="foto-profilo" alt="picture">
+        <p class="testo-about">Ciao sono Samanta e sono una sviluppatrice creativa.<br>
           Il nome del mio sito web "Luna Futura" è la traduzione della lingua giapponese 
           Mirai Tsuki Games, in abbrevviato MTG. Nome d'arte che ho inventato dall'anno 2018, quando
           ho iniziato a sviluppare videogames da autodidatta in C++/UE4.<br> Ho collaborato anche con piccoli indie sviluppatori nei loro progetti.
@@ -76,52 +78,69 @@
       Mi sono unita su start2impact University e sto studiando il Master Frontend Developer con l'obiettivo di usare le mie abilità <strong>creative
       e di problem solving</strong> per sviluppare interfacce web e mobile nel settore <strong>ambientale, editoria o di intrattenimento.</strong><br>
       Nel tempo libero passo le mie giornate alla lettura e scrittura romanzi, disegnare, imparare Python, giocare ai videogiochi single/multiplayer.</p>
-
-      </section>
-      <div id="Portfolio">
+    </div>
+    </div>
+    </section>
+      <section id="Portfolio">
         <h3>Portfolio</h3>
-        <h3>Frontend progetti</h3>
+        <h3>Frontend Progetti</h3>
         <div class="card-container">
         <div class="card">
           <div class="card-content">
           <h3 class="card-title">Hotel Pomelia</h3>
-           <p class="card-body">Sito web per l'Hotel Pomelia realizzato in HTML e CSS. <br>No responsivo.<br>
-              Se volete vedere il progetto potete scaricarlo su Github.<br>
+           <p class="card-body">Sito web per l'Hotel Pomelia realizzato in HTML e CSS. No responsivo.<br>
+              Disponibile su Github.<br>
             </p>
-            <a href="https://github.com/Sassa19932?tab=repositories" class="github" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/Sassa19932/ProgettoSviluppoIntrodiSamantaMancini.git" class="github" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
       </div>
     </div>
-    <div class="card-container">
+        <h3>Game Design Progetti</h3>
+        <p class="text-game">Tutti i progetti sono realizzati in UE4 e Blender 3D.<br>Sono semplici demo.
+        Disponibile solo per pc Windows 64bit e 32bit.</p>
+        <div class="card-container">
         <div class="card">
           <div class="card-content">
-          <h3 class="card-title">Hotel Pomelia</h3>
-           <p class="card-body">Sito web per l'Hotel Pomelia realizzato in HTML e CSS. <br>No responsivo.<br>
-              Se volete vedere il progetto potete scaricarlo su Github.<br>
+          <h3 class="card-title">Rayxim Dreams</h3>
+           <p class="card-body"><strong>Scopo del gioco:</strong> raccogliere 5 lums in giro per il livello e trovare l'uscita, ma attenzione ai nemici.
             </p>
-            <a href="https://github.com/Sassa19932?tab=repositories" class="github" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <button disabled>Download</button>
         </div>
       </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-          <div class="card-content">
-          <h3 class="card-title">Hotel Pomelia</h3>
-           <p class="card-body">Sito web per l'Hotel Pomelia realizzato in HTML e CSS. <br>No responsivo.<br>
-              Se volete vedere il progetto potete scaricarlo su Github.<br>
-            </p>
-            <a href="https://github.com/Sassa19932?tab=repositories" class="github" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </div>
+      <div class="card">
+        <div class="card-content">
+        <h3 class="card-title">Rich Art Museum</h3>
+         <p class="card-body"><strong>Scopo del gioco:</strong> sei un ladro e il tuo scopo è di rubare tutti i quadri nel museo senza farti scoprire.
+          </p>
+          <button disabled>Download</button>
       </div>
     </div>
-</div>
+    <div class="card">
+      <div class="card-content">
+      <h3 class="card-title">Ibrido Virus</h3>
+       <p class="card-body"><strong>Scopo del gioco:</strong> visual novel horror/sci-fi punta e clicca.<br>
+        Attenzione: ci sono dei Jumpscares e contenuti forti.
+        </p>
+        <button disabled>Download</button>
+    </div>
+  </div>
+      </div>
+      </section>
       <section id="Contatti">
         <h3>Contatti</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
-          Maxime accusamus molestiae vitae molestias similique illum atque cum ut sunt ipsum inventore <br>
-          quibusdam eaque eligendi, enim voluptate perferendis possimus voluptates architecto maiores quidem <br>
-          non porro id. Ab voluptatibus provident 
-          facilis expedita excepturi iusto ut sit eius vitae tenetur praesentium, rerum aliquam!</p>
+        <div class="container-contact">
+          <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+              <h2>Contact Us</h2>
+              <input type="text" class="field" placeholder="Your Name">
+              <input type="text" class="field" placeholder="Your Email">
+              <input type="text" class="field" placeholder="Phone">
+              <textarea placeholder="Message" class="field"></textarea>
+              <button class="btn">Send</button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
       <!-- footer section-->

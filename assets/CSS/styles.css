@@ -70,45 +70,43 @@ nav{
 /*header*/
 
 #home {
-    background-image: url('luna.jpg');
+    background-image: -webkit-linear-gradient(rgba(12, 12, 12, 0.5), rgba(34, 34, 34, 0.8)), url('../img/luna.jpg');
     background-size: cover;
     background-position: center;
-    width: 100%;
     min-height: 100vh;
     z-index: -1;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 2rem;
 }
 
 
 /*titolo header styling*/
-.container h1{
+
+.container{
+    text-align: center;
+}
+
+.titolo-header{
     color: #ffffff;
     font-size: 3.12rem;
     font-style: bold;
     line-height: 1.2;
-    margin-top: 5rem;
-    text-align: center;
-    }
-.container span{
+}
+.titolo-header span{
     color:#00fff2;
     }
 /*button normal*/
-.container .button{
+ .container .button{
     font-size: 1.5rem;
     border: #00fff2 2px solid;
     padding: 0.8rem 0.9rem;
+    margin-top: 5rem;
     border-radius: 5rem;
     background-color: transparent;
     text-decoration: none;
     color:#ffffff;
 }
 /*button hover*/
-.container .button:hover{
+ .container .button:hover{
     background: #00fff2;
     box-shadow: 0 0 10px #00fff2,
                 0 0 20px  #00fff2,
@@ -118,44 +116,23 @@ nav{
     color: #1c1c1c;
 }
 
-    #Portfolio{
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        min-height: 50vh;
-    }
-
     .card-container{
-        width: 30vw;
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
-        grid-gap: 20px;
-        padding: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-auto-rows: auto;
+        grid-gap: 1rem;
+        margin-left: 3%;
     }
 
-    .card-container .card::before{
-        position: absolute;
-        content: "";
-        top:99%;
-        left:0;
-        width:100%;
-        height: 100%;
-    }
-
-    .card-container .card:hover .card::before{
-        top: 50%;
-
-    }
     .card-title{
         text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
-        color: rgb(0, 168, 0);
+        color: #00fff2;
         font-size: 2rem;
 }
     
     .card-content{
-        padding: 1.5em;
-        background: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.3) 20%, hsl(0 0% 0% / 1));
+        padding-top: 10rem;
+        text-align: center;
     }
     
     .card-body{
@@ -164,28 +141,173 @@ nav{
   
   /* Add some padding inside the card container */
   .card-container .card{
-    background-image: url('../img/Hotelimage.jpg');
+    background-image: -webkit-linear-gradient(rgba(107,107, 107, 0.5), rgba(0, 0, 0, 0.8)), url('../img/Hotelimage.jpg');
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 8px 0 #00fff2;
-    padding: 10rem 0 0;
     border-radius: 0.5rem;
     overflow: hidden;
-    position: relative;
     height: 400px;
   }
+
+  .card .button:disabled,
+  .card .button [disabled]{
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 3rem;
+    background-color: #00fff2;
+    border: 2px solid #ffffff;
+    color:#ffffff;
+  }
+
+
+ 
   .card .fa-github{
     font-size: 2rem;
-    padding: 0.5rem;
+    padding: auto;
     text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
   }
 
+  .text-game{
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+  /*about start*/
+    h3{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .column{
+       float: left;
+       max-width: 100%;
+    }
+    .column img{
+        max-width: 150px;
+        height: auto;
+        margin-left: 3%;
+        border-radius: 50%;
+    }
+    .testo-about{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+       }
+
+       /*form contatti*/
+       .container-contact{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 100px;
+    }
+    
+    .container-contact:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: url("img/bg.jpg") no-repeat center;
+        background-size: cover;
+        filter: blur(50px);
+        z-index: -1;
+    }
+    .contact-box{
+        max-width: 850px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    }
+    
+    .left{
+        background: url("img/bg.jpg") no-repeat center;
+        background-size: cover;
+        height: 100%;
+    }
+    
+    .right{
+        padding: 25px 40px;
+    }
+    
+    h2{
+        position: relative;
+        padding: 0 0 10px;
+        margin-bottom: 10px;
+    }
+    
+    h2:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50px;
+        border-radius: 2px;
+        background-color: #2ecc71;
+    }
+    
+    .field{
+        width: 100%;
+        border: 2px solid rgba(0, 0, 0, 0);
+        outline: none;
+        background-color: rgba(230, 230, 230, 0.6);
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+        transition: .3s;
+    }
+    
+    .field:hover{
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    textarea{
+        min-height: 150px;
+    }
+    
+    .btn{
+        width: 100%;
+        padding: 0.5rem 1rem;
+        background-color: #2ecc71;
+        color: #fff;
+        font-size: 1.1rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: .3s;
+    }
+    
+    .btn:hover{
+        background-color: #27ae60;
+    }
+    
+    .field:focus{
+        border: 2px solid rgba(30,85,250,0.47);
+        background-color: #fff;
+    }
 /* social media icons styling */
 .social-icons {
     font-size: 1.5rem;
 }
 .social-icons li{
     display: inline-block;
+    padding: 0 5px;
 }
 .fa-instagram:hover, .fa-instagram:focus, .fa-twitter:hover, .fa-twitter:focus, .fa-linkedin-in:hover, .fa-linkedin-in:focus, .fa-artstation:hover, .fa-artstation:focus, .fa-github:hover, .fa-github:focus {
    color: #00fff2;
@@ -210,15 +332,23 @@ html{
 
 
 /*media*/
-@media (max-width: 912px){
-
-    .container h1{
-        font-size: 1.5rem;
+@media screen and (max-width: 575.98px){
+    #home{
+        min-height: 50vh;
     }
-    .container .button {
+
+    .container{
+        position: relative;
+        padding-left: 50%;
+        padding-top: -50%;
+    }
+    
+    .titolo-header{
+        font-size: 0.5rem;
+    }
+     .button {
         font-size: 1rem;
-        padding: 0.5rem 0.6rem;
-        border-radius: 5rem;
+        padding: 0.6rem 0.7rem;
         background-color: #00fff2;
         border: none;
         color: #1c1c1c;
@@ -227,19 +357,7 @@ html{
         0 0 60px  #00fff2,
         0 0 300px  #00fff2;
     }
-       #home{
-        min-height: 40vh;
-       }   
 
-    
-}
-@media  (max-width: 546px){
-    .container h1{
-        font-size: 1rem;
-    }
-    #home{
-        min-height: 40vh;
-       }  
     .toggle-button{
         display: flex;
         text-decoration: none;
@@ -262,21 +380,57 @@ html{
     .nav-links .active{
         display: flex;
     }
-    
-   
-}
-
-@media (max-width: 450px){
-    #home{
-        min-height: 30vh;
-    }
-}
-
-@media (max-width: 300px){
-    #home{
-        min-height: 25vh;
-    }
-    .container h1{
+       h3{
+        font-size: 1.5rem;
+       }  
+    .testo-about{
         font-size: 1rem;
     }
+
+    .column img{
+        display: block;
+        margin-top: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .fa-brands{
+        color: #00fff2;
+    }
+
+    .social-icons{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 768px){
+    .titolo-header{
+        font-size: 2rem;
+    }
+    
+    h3{
+        font-size: 2.5rem;
+       }  
+    .testo-about{
+        font-size: 2rem;
+    }
+    
+    .container{
+        text-align: center;
+        padding: 8rem 0 0 0;
+    }
+}
+
+@media (min-width: 992px){
+    #home{
+        min-height: 20vh;
+    }
+
+}
+
+@media (min-width: 1400px) { 
+    #home{
+        min-height: 100vh;
+    }
+
 }
