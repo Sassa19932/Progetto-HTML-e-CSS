@@ -126,19 +126,20 @@
   </div>
       </div>
       </section>
-      <section id="Contatti">
-        <h3>Contatti</h3>
+      <section id="Contattami">
+        <h3>Contattami</h3>
+<div class="container-form">
         <form action="mailto: s.mancini93@hotmail.it">
-          Username:<br>
-          <input type="text" name="username" 
-                 placeholder="Enter Username"><br><br>
-          Message:<br>
-          <input type="textarea" name="message" 
-              rows="10" cols="30" 
-              placeholder="Enter your message">
-          <br><br>
-          <input type="submit" value="Send Email">
+<label for="name">Nome</label>
+<input type="text" id="name" name="name" placeholder="Inserisci il tuo nome" required>          	<label for="email">Email</label>
+			<input type="text" id="email" name="email" placeholder="Inserisci la tua email" required>
+
+			<label for="message">Messaggio</label>
+			<textarea id="message" name="message" placeholder="Inserisci il tuo messaggio" style="height:200px" required></textarea>
+
+          <input type="submit" value="Invia Email">
       </form>
+</div>
       </section>
     </main>
       <!-- footer section-->
