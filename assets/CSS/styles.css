@@ -336,6 +336,15 @@ html{
         text-align: center;
         padding: 8rem 0 0 0;
     }
+
+input[type=text], select, textarea {
+				width: 100%;
+				margin-top: 0;
+			}
+			input[type=submit] {
+				width: 100%;
+				margin-top: 10px;
+			}
 }
 
 @media (min-width: 992px){
