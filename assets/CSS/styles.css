@@ -227,7 +227,7 @@ label {
 }
 .social-icons li{
     display: inline-block;
-    padding: 0 5px;
+    padding: 0 15px;
 }
 .fa-instagram:hover, .fa-instagram:focus, .fa-twitter:hover, .fa-twitter:focus, .fa-linkedin-in:hover, .fa-linkedin-in:focus, .fa-artstation:hover, .fa-artstation:focus, .fa-github:hover, .fa-github:focus {
    color: #00fff2;
