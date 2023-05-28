@@ -70,10 +70,10 @@ nav{
 /*header*/
 
 #home {
-    background-image: -webkit-linear-gradient(rgba(12, 12, 12, 0.5), rgba(34, 34, 34, 0.8)), url('../img/luna.jpg');
+    background-image: -webkit-linear-gradient(rgba(12, 12, 12, 0.3), rgba(34, 34, 34, 0.5)), url('../img/luna.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    height: 100vh;
     z-index: -1;
     margin-bottom: 2rem;
 }
@@ -81,38 +81,46 @@ nav{
 
 /*titolo header styling*/
 
-.container{
+.header-content{
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
+    color:white;
 }
 
-.titolo-header{
-    color: #ffffff;
-    font-size: 3.12rem;
+h1{
+   margin-top: 10%;
+    font-size: 3rem;
     font-style: bold;
     line-height: 1.2;
 }
-.titolo-header span{
+.header-content span{
     color:#00fff2;
     }
 /*button normal*/
- .container .button{
-    font-size: 1.5rem;
-    border: #00fff2 2px solid;
-    padding: 0.8rem 0.9rem;
-    margin-top: 5rem;
-    border-radius: 5rem;
+ .header-content .button{
+    display: inline-block;
     background-color: transparent;
     text-decoration: none;
-    color:#ffffff;
+			color: white;
+			padding: 10px 20px;
+			border: #00fff2 2px solid;
+			border-radius: 5rem;
+			cursor: pointer;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            font-weight: bold;
 }
 /*button hover*/
- .container .button:hover{
+ .header-content .button:hover{
     background: #00fff2;
-    box-shadow: 0 0 50px;
+    box-shadow: 0 0 100px #00fff2;
     border: none;
     color: #1c1c1c;
 }
 
+/*card-styling*/
     .card-container{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -120,6 +128,7 @@ nav{
         grid-gap: 1rem;
         margin-left: 3%;
         margin-right: 3%;
+        margin-bottom: 2rem;
     }
 
     .card-title{
@@ -135,9 +144,11 @@ nav{
     
     .card-body{
         color: rgb(255 255 255 / 0.85);
+        font-size: 1rem;
+        margin-left: 3%;
+        margin-right: 3%;
     }
   
-  /* Add some padding inside the card container */
   .card-container .card{
     background-image: -webkit-linear-gradient(rgba(107,107, 107, 0.5), rgba(0, 0, 0, 0.8)), url('../img/Hotelimage.jpg');
     background-size: cover;
@@ -152,12 +163,14 @@ nav{
 
  
   .card .fa-github{
+    margin-top: 2rem;
     font-size: 2rem;
     padding: auto;
     text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
   }
 
   .text-game{
+    font-size: 1rem;
     text-align: center;
     padding-bottom: 3rem;
   }
@@ -177,7 +190,7 @@ nav{
         margin-left: 3%;
         border-radius: 50%;
     }
-    .testo-about{
+    .text-about{
         margin-left: 3%;
         margin-right: 3%;
     }
@@ -203,23 +216,33 @@ label {
 		}
 
 		input[type=submit] {
-			background-color: #4CAF50;
+            background-color: transparent;
 			color: white;
-			padding: 12px 20px;
-			border: none;
-			border-radius: 4px;
+			padding: 10px 20px;
+			border: #00fff2 2px solid;
+			border-radius: 5rem;
 			cursor: pointer;
 			float: right;
+            font-size: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-weight: bold;
 		}
 
 		input[type=submit]:hover {
-			background-color: #45a049;
+			background-color: #00fff2;
+            color: #1c1c1c;
+            box-shadow: 0 0 50px #00fff2;
+            border: none;
 		}
 
-		.container {
+		.container-form {
 			border-radius: 5px;
 			background-color: #f2f2f2;
+            color: #1c1c1c;
 			padding: 20px;
+            margin-right: 3%;
+            margin-left: 3%;
 		}
 /* social media icons styling */
 .social-icons {
@@ -231,10 +254,11 @@ label {
 }
 .fa-instagram:hover, .fa-instagram:focus, .fa-twitter:hover, .fa-twitter:focus, .fa-linkedin-in:hover, .fa-linkedin-in:focus, .fa-artstation:hover, .fa-artstation:focus, .fa-github:hover, .fa-github:focus {
    color: #00fff2;
+   box-shadow: 0 0 100px #00fff2;
 }
 .fa-brands {
     color: #ffffff;
-    margin:0;
+    margin:0 auto;
 }
 /* footer styling */
 #footer {
@@ -252,27 +276,22 @@ html{
 
 
 /*media*/
-@media screen and (max-width: 575.98px){
+@media screen and (max-width: 575px){
     #home{
-        min-height: 50vh;
+        height: 30vh;
     }
 
-    .container{
-        position: relative;
-        padding-left: 50%;
-        padding-top: -50%;
-    }
     
-    .titolo-header{
-        font-size: 0.5rem;
+    h1{
+        font-size: 1.8rem;
     }
-     .button {
+     .header-content .button {
         font-size: 1rem;
-        padding: 0.6rem 0.7rem;
+        padding: 0.3rem 0.5rem;
         background-color: #00fff2;
         border: none;
         color: #1c1c1c;
-        box-shadow: 0 0 50px #00fff2;
+        box-shadow: 0 0 100px #00fff2;
     }
 
     .toggle-button{
@@ -281,10 +300,7 @@ html{
     }
     .nav-links {
         display: none;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin-top: 10px 0;
     }
 
     .nav-links li{
@@ -297,11 +313,13 @@ html{
     .nav-links .active{
         display: flex;
     }
-       h3{
+    h3{
+        margin-right: 3%;
+        margin-left: 3%;
         font-size: 1.5rem;
-       }  
-    .testo-about{
-        font-size: 1rem;
+    }
+    .text-about{
+        font-size: 1.5rem;
     }
 
     .column img{
@@ -315,9 +333,13 @@ input[type=text], select, textarea {
 				width: 100%;
 				margin-top: 0;
 			}
-			input[type=submit] {
-				width: 100%;
-				margin-top: 10px;
+input[type=submit] {
+				margin-top: 2rem;
+                margin-bottom: 2rem;
+                border: none;
+                color: #1c1c1c;
+                background-color: #00fff2;
+                box-shadow: 0 0 100px #00fff2;
 			}
 
     .fa-brands{
