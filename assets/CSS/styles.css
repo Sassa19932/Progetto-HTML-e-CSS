@@ -10,7 +10,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.12rem;
+    font-size: 1em;
     background:#1c1c1c;
     color:white;
     line-height: 1.6;
@@ -82,34 +82,33 @@ nav{
 /*titolo header styling*/
 
 .header-content{
-    max-width:1200px;
-    margin: 0 auto;
+    max-width: 1200px;
+    transform: translateY(10%);
     padding: 20px;
     text-align: center;
     color:white;
 }
 
 h1{
-   margin-top: 10%;
-    font-size: 3rem;
+    font-size: 3em;
     font-style: bold;
     line-height: 1.2;
+    margin-top: 10%;
 }
 .header-content span{
     color:#00fff2;
     }
 /*button normal*/
  .header-content .button{
-    display: inline-block;
+    margin-top: 20px;
     background-color: transparent;
     text-decoration: none;
 			color: white;
 			padding: 10px 20px;
 			border: #00fff2 2px solid;
-			border-radius: 5rem;
+			border-radius: 5em;
 			cursor: pointer;
-            font-size: 1.5rem;
-            margin-top: 2rem;
+            font-size: 1.5em;
             font-weight: bold;
 }
 /*button hover*/
@@ -134,7 +133,7 @@ h1{
     .card-title{
         text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
         color: #00fff2;
-        font-size: 2rem;
+        font-size: 2em;
 }
     
     .card-content{
@@ -144,7 +143,6 @@ h1{
     
     .card-body{
         color: rgb(255 255 255 / 0.85);
-        font-size: 1rem;
         margin-left: 3%;
         margin-right: 3%;
     }
@@ -164,13 +162,12 @@ h1{
  
   .card .fa-github{
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 2em;
     padding: auto;
     text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
   }
 
   .text-game{
-    font-size: 1rem;
     text-align: center;
     padding-bottom: 3rem;
   }
@@ -178,7 +175,7 @@ h1{
   /*about start*/
     h3{
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2.5em;
     }
     .column{
        float: left;
@@ -246,7 +243,7 @@ label {
 		}
 /* social media icons styling */
 .social-icons {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 .social-icons li{
     display: inline-block;
@@ -276,25 +273,21 @@ html{
 
 
 /*media*/
-@media screen and (max-width: 575px){
-    #home{
-        height: 30vh;
-    }
-
-    
-    h1{
-        font-size: 1.8rem;
-    }
+@media screen and (max-width: 992px){
+   #home{
+    height: 50vh;
+   }
      .header-content .button {
-        font-size: 1rem;
-        padding: 0.3rem 0.5rem;
+        display: inline-block;
+        text-align: center;
+        padding: 0 auto;
         background-color: #00fff2;
         border: none;
         color: #1c1c1c;
         box-shadow: 0 0 100px #00fff2;
     }
 
-    .toggle-button{
+    .toggle-button {
         display: flex;
         text-decoration: none;
     }
@@ -302,27 +295,16 @@ html{
         display: none;
         margin-top: 10px 0;
     }
-
-    .nav-links li{
-        text-align: center;
-    }
-    .nav-links li a{
-        padding: .5rem 1rem;
-    }
-
-    .nav-links .active{
-        display: flex;
-    }
-    h3{
+    h3 {
         margin-right: 3%;
         margin-left: 3%;
-        font-size: 1.5rem;
+        font-size: 2.5em;
     }
-    .text-about{
-        font-size: 1.5rem;
+    .text-about {
+        font-size: 1.5em;
     }
 
-    .column img{
+    .column img {
         display: block;
         margin-top: 1.5rem;
         margin-left: auto;
@@ -334,52 +316,52 @@ input[type=text], select, textarea {
 				margin-top: 0;
 			}
 input[type=submit] {
-				margin-top: 2rem;
-                margin-bottom: 2rem;
-                border: none;
-                color: #1c1c1c;
-                background-color: #00fff2;
-                box-shadow: 0 0 100px #00fff2;
-                width: 80%;
-                text-align: center;
+    text-align: center;
+    padding: 0 auto;
+    background-color: #00fff2;
+    border: none;
+    color: #1c1c1c;
+    box-shadow: 0 0 100px #00fff2;
 			}
 
-    .fa-brands{
+    .fa-brands {
         color: #00fff2;
+    }
+}
+
+@media screen and (max-width: 576px) { 
+    #home{
+        height: 30vh;
+       } 
+
+       h1{
+        font-size: 1.5em;
+        margin-top: 0;
+       }
+       .header-content .button{
+        font-size: 1em;
+       }
+       h3{
+        font-size: 1em;
+       }
+       .text-about, .text-game{
+        font-size: 1em;
+       }
+       input[type=submit] {
+        text-align: center;
+        padding: 0 auto;
+        background-color: #00fff2;
+        border: none;
+        color: #1c1c1c;
+        box-shadow: 0 0 100px #00fff2;
     }
 
     .social-icons{
-        font-size: 1.5rem;
-    }
-}
-@media (max-width: 768px){
-    .titolo-header{
-        font-size: 2rem;
+        font-size: 1em;
     }
     
-    h3{
-        font-size: 2.5rem;
-       }  
-    .testo-about{
-        font-size: 2rem;
-    }
-    
-    .container{
-        text-align: center;
-        padding: 8rem 0 0 0;
-    }
-}
-
-@media (min-width: 992px){
-    #home{
-        min-height: 20vh;
+    .card-container{
+        grid-template-columns: 1fr;
     }
 
-}
-
-@media (min-width: 1400px) { 
-    #home{
-        min-height: 100vh;
-    }
-
-}
+ }
