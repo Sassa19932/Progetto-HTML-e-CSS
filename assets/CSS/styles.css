@@ -340,6 +340,8 @@ input[type=submit] {
                 color: #1c1c1c;
                 background-color: #00fff2;
                 box-shadow: 0 0 100px #00fff2;
+                width: 80%;
+                text-align: center;
 			}
 
     .fa-brands{
