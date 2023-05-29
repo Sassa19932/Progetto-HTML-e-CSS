@@ -23,7 +23,6 @@ transform: translate(-50, -50);
     margin: 2rem auto;
     padding: 2rem;
   background-color: transparent;
-  transform: translate(10px);
   border-radius: 10px 10px 10px 10px;
   text-align: center;
   border: #00fff2 2px solid;
