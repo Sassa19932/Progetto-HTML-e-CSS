@@ -353,7 +353,9 @@ input[type=submit] {
     }
 }
 @media (max-width: 768px){
-	
+	    #home{
+        min-height: 50vh;
+    }
     h1{
         font-size: 2rem;
     }
@@ -380,7 +382,7 @@ input[type=submit] {
 
 @media (max-width: 1400px) { 
     #home{
-        min-height: 100vh;
+        min-height: 50vh;
     }
 
 }
