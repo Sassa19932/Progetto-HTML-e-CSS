@@ -20,8 +20,6 @@ body{
 position: absolute;
 transform: translate(-50, -50);
   max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
   background-color: transparent;
   border-radius: 10px 10px 10px 10px;
   text-align: center;
