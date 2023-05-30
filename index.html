@@ -41,22 +41,26 @@
   <title>Luna Futura - Frontend Portfolio</title>
 </head>
     <body>
-<!--Navbar-->
-      <nav>
-        <div class="Navbar">
-          <a href="#" class="toggle-button">
-            <i class="fa-solid fa-bars"></i>
-          </a>
-          <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-           <li><a href="#About">About</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#Contattami">Contattami</a></li>
-          </ul>
-      </div>
-      </nav>
+
 <!--Header-->
       <header id="home">
+        <!--Navbar-->
+        <input type="checkbox" id="toggle">
+      <nav class="navbar">
+      <a href="#" class="navbar-brand">Logo</a>
+      <label class="navbar-toggler" for="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+
+        <ul class="menu">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Contattami">Contattami</a></li>
+        </ul>
+    </nav>
           <div class="header-content">
           <h1>Ciao, sono <span>Samanta.</span><br>
              <span> Junior Frontend</span> Developer</h1>

@@ -13,7 +13,7 @@ body{
     line-height: 1.5;
     background-color: #000000;
     color: #1c1c1c;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 /*Container margin*/
@@ -32,7 +32,6 @@ body{
 }
 
 .header h1{
-    font-size: 3em;
     font-weight: bold;
 }
 
@@ -53,7 +52,7 @@ border-radius: 50%;
 }
 /* social media icons styling */
 .social-icons {
-    font-size: 1.5em;
+    font-size: 1em;
     cursor: pointer;
 }
 .social-icons li{
@@ -100,7 +99,7 @@ border-radius: 50%;
 }
 
  .education h2{
-    font-size: 2.5em;
+    font-size: 1.5em;
     margin: 0 0 1rem;
 }
 
@@ -143,8 +142,12 @@ border-radius: 50%;
     .header h1{
         font-size: 1em;
     }
+
+    .header img{
+        max-width: 100px;
+    }
     .education h2, .skills h2, .personal-info h2, .hobby h2, .biography h2{
-        font-size:0.8em;
+        font-size: 1em;
         margin: 0 0 1rem;
     }
 
@@ -153,11 +156,11 @@ border-radius: 50%;
     }
     
     .education .diploma h3{
-        font-size: 0.8em;
+        font-size: 1em;
         margin: 0 0 0.5rem;
     }
    p {
-    font-size: 0.5em;
+    font-size: 0.8em;
    }
 
    .social-icons {
@@ -165,7 +168,7 @@ border-radius: 50%;
    }
 
    .skills li, .hobby li {
-    font-size: 0.5em;
+    font-size: 0.9em;
    }
 }
 
