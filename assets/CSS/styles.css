@@ -275,7 +275,7 @@ label {
 
 @media screen and (min-width: 240px) and (max-width: 545px) {
     #home{
-        height: 30vh;
+        height: 50vh;
     }
     .header-content .button{
         font-size: 1em;
@@ -286,25 +286,19 @@ label {
         color:#1c1c1c;
     }
     .header-content h1{
-        font-size: 1em;
-        margin-top: auto;
+        font-size: 1.8em;
     }
 
     .navbar{
-        height: 40px;
-        line-height: 40px;
+        height: 50px;
+        line-height: 50px;
      }
-
-     nav .navbar-toggler .bar {
-        width: 30px;
-        height: 3px;
-    }
     nav .menu {
         display: grid;
         position: absolute;
         background: #1c1c1c;
         width: 100%;
-        top: 40px;
+        top: 50px;
         left: 0;
         transform: translateY(-200%);
         z-index: -1;
@@ -372,14 +366,9 @@ label {
         color: #1c1c1c;
     }
     .navbar{
-        height: 40px;
-        line-height: 40px;
+        height: 50px;
+        line-height: 50px;
      }
-
-     nav .navbar-toggler .bar {
-        width: 30px;
-        height: 3px;
-    }
     nav .menu {
         display: grid;
         position: absolute;
@@ -449,14 +438,9 @@ label {
         color: #1c1c1c;
     }
     .navbar{
-        height: 40px;
-        line-height: 40px;
+        height: 50px;
+        line-height: 50px;
      }
-
-     nav .navbar-toggler .bar {
-        width: 30px;
-        height: 3px;
-    }
     nav .menu {
         display: grid;
         position: absolute;
@@ -510,12 +494,12 @@ label {
 nav .navbar-toggler {
     display: none;
     height: min-content;
-    margin: 5px -5px 0 0;
+    margin: 10px -10px 0 0;
     cursor: pointer;
 }
 
 nav .navbar-toggler .bar {
-    width: 30px;
+    width: 35px;
     height: 3px;
     margin-bottom: 10px;
     background: #ffffff;
@@ -532,7 +516,7 @@ input:checked ~ nav .menu {
 }
 
 input:checked ~ nav .navbar-toggler {
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
