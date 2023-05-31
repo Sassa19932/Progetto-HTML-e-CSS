@@ -15,21 +15,28 @@ body{
     color:white;
     line-height: 1.6;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 /*navbar styling*/
 .navbar{
-    position: fixed;
-    top:0;
-    z-index: 2;
-    width:100%;
-    background-color: #000000;
     display: flex;
     justify-content: space-between;
-    padding: 0 15%;
-    height: 50px;
-    line-height: 50px;
+    padding: 0 10px;
+    height: 75px;
+    line-height: 75px;
+    background: #000000;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
 }
 
-
+nav img{
+    margin-left: 10px;
+    height: 50px;
+    z-index: -1;
+}
 
 /*menu normal*/
 .menu{
@@ -47,7 +54,7 @@ body{
     text-decoration: none;
     color: white;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 /*menu hover*/
@@ -69,6 +76,7 @@ body{
     background-position: center;
     height: 100vh;
     margin-bottom: 2rem;
+    z-index: -1;
 }
 
 
@@ -260,34 +268,56 @@ label {
     padding: 0 auto;
     color:#ffffff;
 }
-/*scroll-down*/
-html{
-    scroll-behavior: smooth;
-}
+
 
 
 /*media*/
-@media screen and (max-width: 575px){
 
+@media screen and (min-width: 240px) and (max-width: 545px) {
     #home{
         height: 30vh;
     }
-    .header-content h1{
-        font-size: 1.5em;
-    }
-     
     .header-content .button{
         font-size: 1em;
+        padding: 5px 10px;
+        box-shadow: 0 0 100px #00fff2;
+        background-color: #00fff2;
+        border: none;
+        color:#1c1c1c;
+    }
+    .header-content h1{
+        font-size: 1em;
+        margin-top: auto;
     }
 
-    
-    .row h3, #Portfolio h3, #Contattami h3{
-        margin-right: 3%;
-        margin-left: 3%;
-        font-size: 1.5em;
+    .navbar{
+        height: 40px;
+        line-height: 40px;
+     }
+
+     nav .navbar-toggler .bar {
+        width: 30px;
+        height: 3px;
     }
-    .text-about {
-        font-size: 1em;
+    nav .menu {
+        display: grid;
+        position: absolute;
+        background: #1c1c1c;
+        width: 100%;
+        top: 40px;
+        left: 0;
+        transform: translateY(-200%);
+        z-index: -1;
+    }
+    nav .menu .nav-item {
+        padding-left: 35px;
+    }
+
+    nav .nav-item{
+        border: 1px solid rgba(255, 255, 255, 0.048);
+    }
+    nav .navbar-toggler {
+        display: grid !important;
     }
 
     .column img {
@@ -295,59 +325,12 @@ html{
         margin-top: 1.5rem;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
-    }
-input[type=text], select, textarea {
-				width: 100%;
-				margin-top: 0;
-			}
-
-    .fa-brands {
-        color: #00fff2;
-    }
-    .card-container{
-        grid-template-columns: 1fr;
-    }
-
-    .column img{
         max-width: 100px;
     }
 
+    .row h3, #Portfolio h3, #Contattami h3{
+        font-size: 1.5em;
     }
-
-
-
-@media screen and (max-width: 992px){
-    #home{
-        height: 50vh;
-    }
-
-    .header-content .button{
-        background-color: #00fff2;
-        box-shadow: 0 0 100px #00fff2;
-        border: none;
-        color: #1c1c1c;
-    }
-
-    nav .menu {
-        display: grid;
-        position: absolute;
-        background: #1c1c1c;
-        width: 50%;
-        top: 50px;
-        left: 0;
-        transform: translateX(200%);
-        z-index: -1;
-    }
-
-    nav .menu .nav-item {
-        padding-left: 35px;
-    }
-
-    nav .navbar-toggler {
-        display: grid !important;
-    }
-
     input[type=submit] {
         font-size: 1em;
         margin-top: 2rem;
@@ -359,34 +342,208 @@ input[type=text], select, textarea {
         width: 80%;
         text-align: center;
     }
-    .card-container{
-        grid-template-columns: 1fr;
+    input[type=text], select, textarea {
+        width: 100%;
+        margin-top: 0;
     }
+
 }
+
+@media screen and (min-width: 600px) and (max-width: 992px){
+    #home{
+        height: 50vh;
+    }
+    .row h3, #Portfolio h3, #Contattami h3{
+        margin-right: 3%;
+        margin-left: 3%;
+        font-size: 2.5em;
+    }
+    .text-about {
+        font-size: 2em;
+    }
+
+    .fa-brands {
+        color: #00fff2;
+    }
+    .header-content .button{
+        background-color: #00fff2;
+        box-shadow: 0 0 100px #00fff2;
+        border: none;
+        color: #1c1c1c;
+    }
+    .navbar{
+        height: 40px;
+        line-height: 40px;
+     }
+
+     nav .navbar-toggler .bar {
+        width: 30px;
+        height: 3px;
+    }
+    nav .menu {
+        display: grid;
+        position: absolute;
+        background: #1c1c1c;
+        width: 100%;
+        top: 40px;
+        left: 0;
+        transform: translateY(-200%);
+        z-index: -1;
+    }
+    nav .menu .nav-item {
+        padding-left: 35px;
+    }
+
+    nav .nav-item{
+        border: 1px solid rgba(255, 255, 255, 0.048);
+    }
+    nav .navbar-toggler {
+        display: grid !important;
+    }
+
+    .column img {
+        display: block;
+        margin-top: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 150px;
+    }
+    input[type=submit] {
+        font-size: 1em;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border: none;
+        color: #1c1c1c;
+        background-color: #00fff2;
+        box-shadow: 0 0 100px #00fff2;
+        width: 80%;
+        text-align: center;
+    }
+    input[type=text], select, textarea {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 993px) and (max-width: 1024px){
+  
+    .row h3, #Portfolio h3, #Contattami h3{
+        margin-right: 3%;
+        margin-left: 3%;
+        font-size: 2.5em;
+    }
+    .text-about {
+        font-size: 2em;
+    }
+
+    .fa-brands {
+        color: #00fff2;
+    }
+    .header-content .button{
+        background-color: #00fff2;
+        box-shadow: 0 0 100px #00fff2;
+        border: none;
+        color: #1c1c1c;
+    }
+    .navbar{
+        height: 40px;
+        line-height: 40px;
+     }
+
+     nav .navbar-toggler .bar {
+        width: 30px;
+        height: 3px;
+    }
+    nav .menu {
+        display: grid;
+        position: absolute;
+        background: #1c1c1c;
+        width: 100%;
+        top: 40px;
+        left: 0;
+        transform: translateY(-200%);
+        z-index: -1;
+    }
+    nav .menu .nav-item {
+        padding-left: 35px;
+    }
+
+    nav .nav-item{
+        border: 1px solid rgba(255, 255, 255, 0.048);
+    }
+    nav .navbar-toggler {
+        display: grid !important;
+    }
+
+    .column img {
+        display: block;
+        margin-top: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 150px;
+    }
+    input[type=submit] {
+        font-size: 1em;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border: none;
+        color: #1c1c1c;
+        background-color: #00fff2;
+        box-shadow: 0 0 100px #00fff2;
+        width: 80%;
+        text-align: center;
+    }
+    input[type=text], select, textarea {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    
+    
+}
+
+
 
 nav .navbar-toggler {
     display: none;
     height: min-content;
-    margin: 10px 0;
+    margin: 5px -5px 0 0;
     cursor: pointer;
 }
 
 nav .navbar-toggler .bar {
-    width: 24px;
-    height: 2px;
+    width: 30px;
+    height: 3px;
     margin-bottom: 10px;
     background: #ffffff;
-    border-radius: 20%;
+    border-radius: 10%;
     transition: .4s;
 }
 
-.checkbox {
+#toggle {
     display: none;
 }
 
 input:checked ~ nav .menu {
-    transform: translateX(100%);
+    transform: translateY(0);
 }
 
+input:checked ~ nav .navbar-toggler {
+    margin-top: 35px;
+}
 
+input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+}
 
+input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+    display: none;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+    transform: rotate(-45deg);
+}
