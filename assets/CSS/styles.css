@@ -20,89 +20,64 @@ html{
     scroll-behavior: smooth;
 }
 /*navbar styling*/
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-    height: 75px;
-    line-height: 75px;
-    background: #000000;
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-}
 
-nav img{
-    margin-left: 10px;
-    height: 50px;
-    z-index: -1;
-}
-
-/*menu normal*/
-.menu{
-    display: flex;
-    list-style: none;
-}
-
-.menu .nav-item{
-    cursor: pointer;
-    height: 100%;
-    padding: 0 30px;
-}
-
-.menu .nav-link{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/*menu hover*/
-.menu .nav-item:hover{
-    background: #00fff2;
-    box-shadow: 0 0 100px #00fff2;
-
+.nav-item .nav-link:hover {
+background-color: #00fff2;
+box-shadow: 0 0 100px #00fff2;
+border: none;
 }
 
 
- 
-  
 
 /*header*/
-
-#home {
-    background-image: -webkit-linear-gradient(rgba(12, 12, 12, 0.3), rgba(34, 34, 34, 0.5)), url('../img/luna.jpg');
+.masterhead{
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     height: 100vh;
-    margin-bottom: 2rem;
+    position: relative;
+    color: white;
     z-index: -1;
-}
-
-
-/*title header styling*/
-
-.header-content{
-    max-width: 1200px;
-    transform: translateY(10%);
-    padding: 20px;
-    text-align: center;
-    color:white;
 }
 
 h1{
-    font-size: 3em;
-    font-style: bold;
-    line-height: 1.2;
-    margin-top: 10%;
+    font-size: 4rem;
 }
-.header-content span{
-    color:#00fff2;
-    }
+
+span {
+color: #00fff2;
+}
+.color-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+section{
+    padding: 90px 0 50px;
+}
+html, body {
+    overflow-x: hidden;
+  }
+  .sec-top{
+    text-align: center;
+    margin-bottom: 70px;
+}
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    z-index: 1000;
+
+}
+ 
+      
+
 /*button normal*/
- .header-content .button{
-    display: inline-block;
-    margin-top: 20px;
+  .button{
+    text-align: center;
     background-color: transparent;
     text-decoration: none;
 			color: white;
@@ -110,16 +85,15 @@ h1{
 			border: #00fff2 2px solid;
 			border-radius: 5em;
 			cursor: pointer;
-            font-size: 1.5em;
-            font-weight: bold;
 }
 /*button hover*/
- .header-content .button:hover{
+ .button:hover{
     background: #00fff2;
     box-shadow: 0 0 100px #00fff2;
     border: none;
     color: #1c1c1c;
 }
+
 
 /*card-styling*/
     .card-container{
@@ -144,13 +118,14 @@ h1{
     }
     
     .card-body{
-        color: rgb(255 255 255 / 0.85);
+        color: rgb(255, 255, 255);
+        margin-top: 0px;
         margin-left: 3%;
         margin-right: 3%;
+        text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
     }
   
   .card-container .card{
-    background-image: -webkit-linear-gradient(rgba(107,107, 107, 0.5), rgba(0, 0, 0, 0.8)), url('../img/Hotelimage.jpg');
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 8px 0 #00fff2;
@@ -163,10 +138,10 @@ h1{
 
  
   .card .fa-github{
-    margin-top: 2rem;
     font-size: 2em;
-    padding: auto;
+    padding: 0;
     text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+    margin-top: 2px;
   }
 
   .text-game{
@@ -179,26 +154,34 @@ h1{
         text-align: center;
         font-size: 2.5em;
     }
-    .column{
-       float: left;
-       max-width: 100%;
+    #About {
+        padding: 90px 0 50px;
+     }
+    #About .contanier{
+        display: flex;
+        justify-content: center;
     }
-    .column img{
-        max-width: 150px;
-        height: auto;
-        margin-left: 3%;
+    #About .about-img img{
+        width: 350px;
         border-radius: 50%;
-    }
-    .text-about{
         margin-left: 3%;
-        margin-right: 3%;
+    }
+    #About .content{
+        margin-left: 30px;
+    }
+    #About .content h1, #Portfolio h1, #Contatti h1{
+        font-size: 45px;
+        color: #e2e2e2;
+    }
+    #About .content h1 span{
+        color: #00fff2;
     }
 
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-       }
+    #About .content p{
+        color: #e2e2e2;
+        line-height: 1.8;
+        margin-bottom:70px;
+    }
 
        /*form contatti*/
 	input[type=text], select, textarea {
@@ -248,8 +231,7 @@ label {
     font-size: 1.5em;
 }
 .social-icons li{
-    display: inline-block;
-    padding: 0 15px;
+    list-style: none;
 }
 .fa-instagram:hover, .fa-instagram:focus, .fa-twitter:hover, .fa-twitter:focus, .fa-linkedin-in:hover, .fa-linkedin-in:focus, .fa-artstation:hover, .fa-artstation:focus, .fa-github:hover, .fa-github:focus {
    color: #00fff2;
@@ -257,96 +239,27 @@ label {
 }
 .fa-brands {
     color: #ffffff;
-    margin:0 auto;
 }
-/* footer styling */
-#footer {
-    text-align: center;
-    width: 100%;
-    clear: both;
-    background-color: #000000;
-    padding: 0 auto;
-    color:#ffffff;
-}
+
 
 
 
 /*media*/
 
-@media screen and (min-width: 240px) and (max-width: 545px) {
-    #home{
-        height: 50vh;
-    }
-    .header-content .button{
-        font-size: 1em;
-        padding: 5px 10px;
-        box-shadow: 0 0 100px #00fff2;
-        background-color: #00fff2;
-        border: none;
-        color:#1c1c1c;
-    }
-    .header-content h1{
-        font-size: 1.8em;
-    }
 
-    .navbar{
-        height: 50px;
-        line-height: 50px;
-     }
-    nav .menu {
-        display: grid;
-        position: absolute;
-        background: #1c1c1c;
-        width: 100%;
-        top: 50px;
-        left: 0;
-        transform: translateY(-200%);
-        z-index: -1;
-    }
-    nav .menu .nav-item {
-        padding-left: 35px;
-    }
+   
 
-    nav .nav-item{
-        border: 1px solid rgba(255, 255, 255, 0.048);
-    }
-    nav .navbar-toggler {
-        display: grid !important;
-    }
+   
 
-    .column img {
-        display: block;
-        margin-top: 1.5rem;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 100px;
-    }
 
-    .row h3, #Portfolio h3, #Contattami h3{
-        font-size: 1.5em;
+@media (min-width: 280px) and (max-width: 992px){
+    .masterhead{
+        height: 30%;
     }
-    input[type=submit] {
-        font-size: 1em;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        border: none;
-        color: #1c1c1c;
-        background-color: #00fff2;
-        box-shadow: 0 0 100px #00fff2;
-        width: 80%;
-        text-align: center;
+    .hero .content h1{
+        font-size: 40px;
     }
-    input[type=text], select, textarea {
-        width: 100%;
-        margin-top: 0;
-    }
-
-}
-
-@media screen and (min-width: 600px) and (max-width: 992px){
-    #home{
-        height: 50vh;
-    }
+    
     .row h3, #Portfolio h3, #Contattami h3{
         margin-right: 3%;
         margin-left: 3%;
@@ -365,38 +278,30 @@ label {
         border: none;
         color: #1c1c1c;
     }
-    .navbar{
-        height: 50px;
-        line-height: 50px;
-     }
-    nav .menu {
-        display: grid;
-        position: absolute;
-        background: #1c1c1c;
-        width: 100%;
-        top: 40px;
-        left: 0;
-        transform: translateY(-200%);
-        z-index: -1;
+   
+    
+    #About .contanier{
+        flex-direction: column;
+        text-align: center;
     }
-    nav .menu .nav-item {
-        padding-left: 35px;
+    #About .about-img img{
+        width: 300px;
+    }
+    #About .about-img {
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media (max-width:575px){
+    .masterhead{
+        height: 30%;
     }
 
-    nav .nav-item{
-        border: 1px solid rgba(255, 255, 255, 0.048);
+    .card-container{
+        grid-template-columns: 3fr;
     }
-    nav .navbar-toggler {
-        display: grid !important;
-    }
-
-    .column img {
-        display: block;
-        margin-top: 1.5rem;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 150px;
-    }
+    
     input[type=submit] {
         font-size: 1em;
         margin-top: 2rem;
@@ -413,121 +318,23 @@ label {
         margin-top: 0;
     }
 
-    
-    
-}
-
-@media screen and (min-width: 993px) and (max-width: 1024px){
-  
-    .row h3, #Portfolio h3, #Contattami h3{
-        margin-right: 3%;
-        margin-left: 3%;
-        font-size: 2.5em;
-    }
-    .text-about {
-        font-size: 2em;
-    }
-
-    .fa-brands {
-        color: #00fff2;
-    }
-    .header-content .button{
-        background-color: #00fff2;
-        box-shadow: 0 0 100px #00fff2;
-        border: none;
-        color: #1c1c1c;
-    }
-    .navbar{
-        height: 50px;
-        line-height: 50px;
-     }
-    nav .menu {
-        display: grid;
-        position: absolute;
-        background: #1c1c1c;
-        width: 100%;
-        top: 40px;
-        left: 0;
-        transform: translateY(-200%);
-        z-index: -1;
-    }
-    nav .menu .nav-item {
-        padding-left: 35px;
-    }
-
-    nav .nav-item{
-        border: 1px solid rgba(255, 255, 255, 0.048);
-    }
-    nav .navbar-toggler {
-        display: grid !important;
-    }
-
-    .column img {
-        display: block;
-        margin-top: 1.5rem;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 150px;
-    }
-    input[type=submit] {
-        font-size: 1em;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        border: none;
-        color: #1c1c1c;
-        background-color: #00fff2;
-        box-shadow: 0 0 100px #00fff2;
-        width: 80%;
+    #About .contanier{
+        flex-direction: column;
         text-align: center;
+        margin-right: 5%;
     }
-    input[type=text], select, textarea {
-        width: 100%;
-        margin-top: 0;
+    #About .about-img img{
+        width: 100px;
+    }
+    #About .about-img {
+        margin-bottom: 40px;
     }
 
+    #About h1{
+        font-size: 30px;
+    }
     
-    
 }
 
 
 
-nav .navbar-toggler {
-    display: none;
-    height: min-content;
-    margin: 10px -10px 0 0;
-    cursor: pointer;
-}
-
-nav .navbar-toggler .bar {
-    width: 35px;
-    height: 3px;
-    margin-bottom: 10px;
-    background: #ffffff;
-    border-radius: 10%;
-    transition: .4s;
-}
-
-#toggle {
-    display: none;
-}
-
-input:checked ~ nav .menu {
-    transform: translateY(0);
-}
-
-input:checked ~ nav .navbar-toggler {
-    margin-top: 40px;
-}
-
-input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
-    position: absolute;
-    transform: rotate(45deg);
-}
-
-input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
-    display: none;
-}
-
-input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
-    transform: rotate(-45deg);
-}

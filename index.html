@@ -29,12 +29,20 @@
   <link rel="canonical" href="https://sassa19932.github.io/Progetto-HTML-e-CSS/">
    <!--Favicon-->
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
   <!--My style CSS-->
   <link rel="stylesheet" href="assets/CSS/styles.css">
 
+ 
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 
   <!--Font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -43,65 +51,62 @@
     <body>
 
 <!--Header-->
-
-      <header id="home">
-        <input type="checkbox" id="toggle">
-    <nav class="navbar">
-
-        <label class="navbar-toggler" for="toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-
-        <ul class="menu">
-            <li class="nav-item">
-                <a href="#home"class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#About" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#Portfolio"class="nav-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a href="#Contattami" class="nav-link">Contattami</a>
-            </li>
-        </ul>
-
-    </nav>
-          <div class="header-content">
-          <h1>Ciao, sono <span>Samanta.</span><br>
-             <span> Junior Frontend</span> Developer</h1>
-             <a class="button" href="CV.html" target="_blank">Vedi Curriculum</a>
+      <header>
+        <nav class="navbar navbar-expand-sm fixed-top navbar bg-black">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/img/Logo_luna.svg"  alt="Logo" height="50" width="50" class= "d-inline-block align-top mx-4"> MTG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#About">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#Portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#Contatti">Contatti</a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
        </header>
+       <div class="masterhead" id="home" style="background-image: url('assets/img/luna.jpg');">
+       <div class=" color-overlay d-flex justify-content-center align-items-center">
+        <h1>HELLO WORLD</h1>
+      </div>
+    </div>
       <main>
 <!--About-->
       <section id="About">
-        <div class="row">
-          <div class="column">
-        <h3>About me</h3>
-        <img src="assets/img/foto.jpg" class="foto-profilo" alt="picture">
-        <p class="text-about">Ciao sono Samanta e sono una sviluppatrice creativa.<br>
-          Il nome del mio sito web "Luna Futura" è la traduzione della lingua giapponese 
-          Mirai Tsuki Games, in abbrevviato MTG. Nome d'arte che ho inventato dall'anno 2018, quando
-          ho iniziato a sviluppare videogames da autodidatta in C++/UE4.<br> Ho collaborato anche con piccoli indie sviluppatori nei loro progetti.
-      Grazie a questo background non solo ho imparato il linguaggio di programmazione in C++ e caricare progetti su Github,
-       ma ho anche acquisito delle soft skills come: <em>creatività, problem solving, precisione e attenzione per i dettagli, autonomia, team working.</em><br>
-      Nell'anno 2023 mi sono appassionata nelle interfacce web, ho imparato la grafica
-      con Figma da sola e ho realizzato un prototipo mobile chiamato Pet Nanny.
-      Mi sono unita su start2impact University e sto studiando il Master Frontend Developer con l'obiettivo di usare le mie abilità per sviluppare interfacce web e mobile nel settore <strong>ambientale, editoria o di intrattenimento.</strong><br>
-      Nel tempo libero passo le mie giornate alla lettura e scrittura romanzi, disegnare, imparare Python, giocare ai videogiochi single/multiplayer.Fare lunghe passeggiate in compagnia o da sola al mare.</p>
-    </div>
-    </div>
+        <div class="contanier">
+          <div class="about-img">
+              <img src="assets/img/foto.jpg" alt="">
+          </div>
+          <div class="content">
+              <h1>About <span>Me</span></h1>
+              <p>Ciao sono Samanta e sono una sviluppatrice creativa.
+                Il nome del mio sito web "Luna Futura" è la traduzione della lingua giapponese Mirai Tsuki Games, in abbrevviato MTG. Nome d'arte che ho inventato dall'anno 2018, quando ho iniziato a sviluppare videogames da autodidatta in C++/UE4.
+                Ho collaborato anche con piccoli indie sviluppatori nei loro progetti. Grazie a questo background non solo ho imparato il linguaggio di programmazione in C++ e caricare progetti su Github, ma ho anche acquisito delle soft skills come: creatività, problem solving, precisione e attenzione per i dettagli, autonomia, team working.
+                Nell'anno 2023 mi sono appassionata nelle interfacce web, ho imparato la grafica con Figma da sola e ho realizzato un prototipo mobile chiamato Pet Nanny. Mi sono unita su start2impact University e sto studiando il Master Frontend Developer con l'obiettivo di usare le mie abilità per sviluppare interfacce web e mobile nel settore ambientale, editoria o di intrattenimento.
+                Nel tempo libero passo le mie giornate alla lettura e scrittura romanzi, disegnare, imparare Python, giocare ai videogiochi single/multiplayer.Fare lunghe passeggiate in compagnia o da sola al mare.</p>
+          </div>
+      </div>
     </section>
 <!--Portfolio-->
       <section id="Portfolio">
-        <h3>Portfolio</h3>
-        <h3>Frontend Progetti</h3>
+        <div class="sec-top">
+        <h1>Portfolio</h1>
+        <h3>Frontend <span>Progetti</span></h3>
+        </div>
         <div class="card-container">
-        <div class="card">
+        <div class="card" style="background-image: linear-gradient(rgba(107,107, 107, 0.5), rgba(0, 0, 0, 0.8)), url('assets/img/portfolio/Hotelimage.jpg');">
           <div class="card-content">
           <h3 class="card-title">Hotel Pomelia</h3>
            <p class="card-body">Sito web per l'Hotel Pomelia realizzato in HTML e CSS. No responsivo.<br>
@@ -111,28 +116,27 @@
         </div>
       </div>
     </div>
-        <h3>Game Design Progetti</h3>
+    <div class="sec-top">
+        <h1>Game Design <span>Progetti</span></h1>
         <p class="text-game">Tutti i progetti sono realizzati in UE4 e Blender 3D.<br>Sono semplici demo.
         Disponibile solo per pc Windows 64bit e 32bit.</p>
+      </div>
         <div class="card-container">
-        <div class="card">
+        <div class="card" style="background-image: url('assets/img/portfolio/RayximCover.jpg');">
           <div class="card-content">
-          <h3 class="card-title">Rayxim Dreams</h3>
-           <p class="card-body"><strong>Scopo del gioco:</strong> raccogliere 5 lums in giro per il livello e trovare l'uscita, ma attenzione ai nemici.
+           <p class="card-body" style="margin-top: 80px;"><strong>Scopo del gioco:</strong> raccogliere 5 lums in giro per il livello e trovare l'uscita, ma attenzione ai nemici.
             </p>
         </div>
       </div>
-      <div class="card">
+      <div class="card" style="background-image: url('assets/img/portfolio/Richartmuseum.jpg');">
         <div class="card-content">
-        <h3 class="card-title">Rich Art Museum</h3>
-         <p class="card-body"><strong>Scopo del gioco:</strong> sei un ladro e il tuo scopo è di rubare tutti i quadri nel museo senza farti scoprire.
+         <p class="card-body" style="margin-top: 80px;"><strong>Scopo del gioco:</strong> sei un ladro e il tuo scopo è di rubare tutti i quadri nel museo senza farti scoprire.
           </p>
       </div>
     </div>
-    <div class="card">
+    <div class="card" style="background-image: url('assets/img/portfolio/Ibridovirus.jpg');">
       <div class="card-content">
-      <h3 class="card-title">Ibrido Virus</h3>
-       <p class="card-body"><strong>Scopo del gioco:</strong> visual novel horror/sci-fi punta e clicca.<br>
+       <p class="card-body" style="margin-top: 80px;"><strong>Scopo del gioco:</strong> visual novel horror/sci-fi punta e clicca.<br>
         Attenzione: ci sono dei Jumpscares e contenuti forti.
         </p>
     </div>
@@ -140,8 +144,10 @@
       </div>
       </section>
 <!--Contattami-->
-      <section id="Contattami">
-        <h3>Contattami</h3>
+      <section id="Contatti">
+        <div class="sec-top">
+        <h1>Contatti</h1>
+        </div>
 <div class="container-form">
         <form action="https://formsubmit.co/s.mancini93@hotmail.it" method="POST">
 <label for="name">Nome</label>
@@ -158,16 +164,22 @@
       </section>
     </main>
       <!-- footer section-->
-  <footer id="footer">
-    <ul class="social-icons">
+      <div class="container-fluid pt-4 px-0">
+  <footer class="bg-black text-center text-white">
+    <div class="container-fluid pb-0">
+    <ul class="social-icons d-flex mx-auto">
       <li><a href="https://www.instagram.com/mtg_misaki0" class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
       <li><a href="https://www.twitter.com/tsukimirai12" class="twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
       <li><a href="https://www.linkedin.com/in/samantamancini/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
       <li><a href="https://www.artstation.com/misaki_93" class="artstation" target="_blank"><i class="fa-brands fa-artstation"></i></a></li>
       <li><a href="https://github.com/Sassa19932?tab=repositories" class="github" target="_blank"><i class="fa-brands fa-github"></i></a></li>
     </ul>
-    <p>&copyCopyright | Samanta Mancini</p>
+    <div class="text-center p-3">
+      © 2023 Copyright | Samanta Mancini
+    </div>
+  </div>
     
 </footer>
+</div>
     </body>
   </html>
