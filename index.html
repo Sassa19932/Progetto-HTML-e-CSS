@@ -12,27 +12,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <!--Twitter card-->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@LunaFutura-FrontendPortfolio">
-  <meta name=”twitter:title” content=”LunaFutura-FrontendPortfolio”>
-  <meta name=”twitter:description” content=”Portfolio_come_sviluppatore_front_end_dove_ci_sono_tutti_i_miei_siti_web_realizzati_per_varie_aziende”>
+  <meta name="twitter:site" content="@LunaFutura-Front-end-Portfolio">
+  <meta name=”twitter:title” content=”LunaFutura-Front-end-Portfolio”>
+  <meta name=”twitter:description” content=”Portfolio_come_sviluppatore_front-end”>
   <meta name=”twitter:creator” content=”@Samanta_Mancini”>
   <meta name=”twitter:image” content=”https://sassa19932.github.io/Progetto-HTML-e-CSS/assets/img/luna.jpg”>
   <!--meta open graph-->
-  <meta property="og:description" content="Portfolio_come_sviluppatore_frontend_dove_ci_sono_tutti_i_miei_siti_web_realizzati_per_varie_aziende">
+  <meta property="og:description" content="Portfolio come sviluppatore front-end">
   <meta property="og:locale" content="it_IT">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sassa19932.github.io/Progetto-HTML-e-CSS/" />
-  <meta property="og:site_name" content="LunaFutura-FrontendPortfolio" />
+  <meta property="og:site_name" content="LunaFutura-Front-end Portfolio" />
   <meta property="og:image" content="https://sassa19932.github.io/Progetto-HTML-e-CSS/assets/img/luna.jpg">
-  <meta property="og:title" content="Luna Futura - Front end Portfolio" />
+  <meta property="og:title" content="Luna Futura - Front-end Portfolio" />
   <!--Link canonico-->
   <link rel="canonical" href="https://sassa19932.github.io/Progetto-HTML-e-CSS/">
    <!--Favicon-->
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-
+  <!--Bootstrap Link-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-
+   <!--Bootstrap Script-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
   <!--My style CSS-->
@@ -46,15 +46,16 @@
 
   <!--Font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <title>Luna Futura - Frontend Portfolio</title>
+  <title>Luna Futura - Front-end Portfolio</title>
 </head>
     <body>
 
 <!--Header-->
       <header>
+        <!--Navbar Bootstrap-->
         <nav class="navbar navbar-expand-sm fixed-top navbar bg-black">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="assets/img/Logo_luna.svg"  alt="Logo" height="50" width="50" class= "d-inline-block align-top mx-4"> MTG</a>
+            <img src="assets/img/Logo_luna.svg" class="navbar-brand"  alt="Logo" height="50" width="50">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -77,12 +78,13 @@
           </div>
         </nav>
        </header>
-       <div class="masterhead" id="home" style="background-image: url('assets/img/luna.jpg');">
-       <div class=" color-overlay d-flex justify-content-center align-items-center">
-        <h1>HELLO WORLD</h1>
-      </div>
-    </div>
+      <!--Home section--> 
       <main>
+       <section id="home" style="background-image: url('assets/img/luna.jpg');">
+        <!--Bootstrap color overlay-->
+        <h1>Ciao sono Samanta.<br><span>Junior Front-end developer.</span></h1>
+        <a href="CV.html" class="button" target="_blank">Vedi CV</a>
+       </section>
 <!--About-->
       <section id="About">
         <div class="contanier">
@@ -118,36 +120,36 @@
     </div>
     <div class="sec-top">
         <h1>Game Design <span>Progetti</span></h1>
-        <p class="text-game">Tutti i progetti sono realizzati in UE4 e Blender 3D.<br>Sono semplici demo.
-        Disponibile solo per pc Windows 64bit e 32bit.</p>
+        <p class="text-game">Tutti i progetti sono realizzati in UE4 e Blender 3D.<br>Sono semplici demo.<br>
+        Disponibile solo per pc Windows 64bit e 32bit.<br> Rayxim Dreams e Ibrido Virus sono in revisione.</p>
       </div>
         <div class="card-container">
-        <div class="card" style="background-image: url('assets/img/portfolio/RayximCover.jpg');">
+        <div class="card" style="background-image: linear-gradient(rgba(107, 107, 107, 0.5), rgba(0, 0, 0, 0.8)),url('assets/img/portfolio/RayximCover.jpg');">
           <div class="card-content">
-           <p class="card-body" style="margin-top: 80px;"><strong>Scopo del gioco:</strong> raccogliere 5 lums in giro per il livello e trovare l'uscita, ma attenzione ai nemici.
+           <p class="card-body" style="margin-top: 60px;"><strong>Scopo del gioco:</strong> raccogliere 5 lums in giro per il livello e trovare l'uscita, ma attenzione ai nemici.
             </p>
         </div>
       </div>
-      <div class="card" style="background-image: url('assets/img/portfolio/Richartmuseum.jpg');">
+      <div class="card" style="background-image: linear-gradient(rgba(107, 107, 107, 0.3), rgba(0, 0, 0, 0.3)),url('assets/img/portfolio/RichArtMuseum.jpg');">
         <div class="card-content">
-         <p class="card-body" style="margin-top: 80px;"><strong>Scopo del gioco:</strong> sei un ladro e il tuo scopo è di rubare tutti i quadri nel museo senza farti scoprire.
+         <p class="card-body" style="margin-top: 50px;"><strong>Scopo del gioco:</strong> sei un ladro e il tuo scopo è di rubare tutti i quadri nel museo senza farti scoprire.
           </p>
+          <a href="https://dandygames.itch.io/welcome-to-rich-art" class="button" style="margin: auto;" target="_blank">Download</a>
       </div>
     </div>
-    <div class="card" style="background-image: url('assets/img/portfolio/Ibridovirus.jpg');">
+    <div class="card" style="background-image: linear-gradient(rgba(107, 107, 107, 0.5), rgba(0, 0, 0, 0.8)), url('assets/img/portfolio/Ibridovirus.jpg');">
       <div class="card-content">
-       <p class="card-body" style="margin-top: 80px;"><strong>Scopo del gioco:</strong> visual novel horror/sci-fi punta e clicca.<br>
+       <p class="card-body" style="margin-top: 50px;"><strong>Scopo del gioco:</strong> visual novel horror/sci-fi punta e clicca.<br>
         Attenzione: ci sono dei Jumpscares e contenuti forti.
         </p>
     </div>
-  </div>
+</div>
       </div>
       </section>
 <!--Contattami-->
       <section id="Contatti">
         <div class="sec-top">
         <h1>Contatti</h1>
-        </div>
 <div class="container-form">
         <form action="https://formsubmit.co/s.mancini93@hotmail.it" method="POST">
 <label for="name">Nome</label>
@@ -156,30 +158,25 @@
 
 			<label for="message">Messaggio</label>
 			<textarea id="message" name="message" placeholder="Inserisci il tuo messaggio" style="height:200px" required></textarea>
-
-          <input type="submit" value="Invia Email">
           <input type="hidden" name="_next" value="https://sassa19932.github.io/Progetto-HTML-e-CSS/thanks.html">
       </form>
 </div>
+<input type="submit" class="button" value="Invia Email">
+</div>
+
       </section>
     </main>
       <!-- footer section-->
-      <div class="container-fluid pt-4 px-0">
-  <footer class="bg-black text-center text-white">
-    <div class="container-fluid pb-0">
-    <ul class="social-icons d-flex mx-auto">
+  <footer class="container-fluid pb-0 mt-5 bg-black text-center text-white">
+    <ul class="social-icons">
       <li><a href="https://www.instagram.com/mtg_misaki0" class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
       <li><a href="https://www.twitter.com/tsukimirai12" class="twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
       <li><a href="https://www.linkedin.com/in/samantamancini/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
       <li><a href="https://www.artstation.com/misaki_93" class="artstation" target="_blank"><i class="fa-brands fa-artstation"></i></a></li>
       <li><a href="https://github.com/Sassa19932?tab=repositories" class="github" target="_blank"><i class="fa-brands fa-github"></i></a></li>
     </ul>
-    <div class="text-center p-3">
-      © 2023 Copyright | Samanta Mancini
-    </div>
-  </div>
+    <p> © 2023 Copyright | Samanta Mancini</p>
     
 </footer>
-</div>
     </body>
   </html>
