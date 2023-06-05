@@ -17,9 +17,12 @@ body{
     line-height: 1.6;
 }
 
+/*section*/
 .section {
     min-height: 100vh
 }
+
+/*scroll-down*/
 html{
     scroll-behavior: smooth;
 }
@@ -41,7 +44,7 @@ border: none;
     border: 2px solid #00fff2;
 }
 
-/*header styling*/
+/*home styling*/
 #home{
     margin-top: 50px;
     background-repeat: no-repeat;
@@ -56,7 +59,7 @@ border: none;
     
 }
 
-
+/*h1 styling*/
 
 h1 {
     font-size: 4rem;
@@ -64,17 +67,12 @@ h1 {
     
 }
 
+/*span styling*/
 #home span, #About span, #Portfolio span {
 color: #00fff2;
 }
 
-/* color overlay*/
-.color-overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
+
 /*margin-top*/
 .sec-top{
     text-align: center;
@@ -261,14 +259,14 @@ footer {
 }
 
 
+
+
+
+   
+
+   
+
 /*media*/
-
-
-   
-
-   
-
-
 @media (min-width: 240px) and (max-width: 576px){
     #home{
        height: 30vh;
@@ -433,7 +431,7 @@ footer p{
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .button {
