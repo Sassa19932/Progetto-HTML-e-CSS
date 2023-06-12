@@ -212,17 +212,21 @@ label {
 			margin-bottom: 10px;
 		}
 
-        input[type=submit]{
+       .button_1{
            
            font-size: 20px;
            margin-top: 30px;
+           border-radius: 30px;
+           padding: 10px 20px;
+           color: #1c1c1c;
+           border:#00fff2 2px solid;
            
         }
 
-		input[type=submit]:hover {
+		.button_1:hover {
 			background-color: #00fff2;
             color: #1c1c1c;
-            box-shadow: 0 0 50px #00fff2;
+            box-shadow: 0 0 100px #00fff2;
             border: none;
 		}
 
@@ -310,6 +314,15 @@ footer {
         padding: 5px 20px;
     }
    
+    .button_1{
+        background-color: #00fff2;
+        box-shadow: 0 0 100px #00fff2;
+        border: none;
+        color: #1c1c1c;
+        font-size: 15px;
+        padding: 5px 20px;
+        margin: auto;
+    }
     
     #About .contanier{
         flex-direction: column;
@@ -323,10 +336,8 @@ footer {
         width: 100px;
         margin: auto;
     }
-    input[type=submit] {
+        .button_1 {
         font-size: 1em;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
         border: none;
         color: #1c1c1c;
         background-color: #00fff2;
@@ -402,10 +413,9 @@ footer {
     grid-gap: 1.5rem;
    }
 
-   input[type=submit] {
-    font-size: 1.5em;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+  .button_1{
+    font-size: 25px;
+    padding: 10px 40px;
     background-color: #00fff2;
     box-shadow: 0 0 100px #00fff2;
     color: #1c1c1c;
@@ -434,6 +444,15 @@ footer p{
     }
 
     .button {
+        padding: 15px 40px;
+        font-size: 25px;
+        background-color: #00fff2;
+        box-shadow: 0 0 100px #00fff2;
+        color: #1c1c1c;
+        border: none;
+    }
+
+    .button_1 {
         padding: 15px 40px;
         font-size: 25px;
         background-color: #00fff2;
