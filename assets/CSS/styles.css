@@ -45,7 +45,7 @@ border: none;
 }
 
 /*home styling*/
-#home{
+#Home{
     margin-top: 50px;
     background-size: cover;
     width: 100%;
@@ -67,7 +67,7 @@ h1 {
 }
 
 /*span styling*/
-#home span, #About span, #Portfolio span {
+#Home span, #About span, #Portfolio span {
 color: #00fff2;
 }
 
@@ -102,7 +102,11 @@ html, body {
     border: none;
     color: #1c1c1c;
 }
-
+h2 {
+    text-align: center;
+    font-size: 3em;
+    text-shadow: -2px 0 #000000, 0 2px #000000, 0 -2px #000000;
+}
 /*h3 styling*/
 h3{
     text-align: center;
@@ -169,7 +173,38 @@ h3{
         text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
     }
   
-  .card-container .card{
+  .card-container .card-bg{
+    background-image: linear-gradient(rgba(107,107, 107, 0.5), rgba(0, 0, 0, 0.8)), url('../img/portfolio/Hotelimage.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 #00fff2;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 400px;
+  }
+
+  .card-container .card-bg_1{
+    background-image: linear-gradient(rgba(107, 107, 107, 0.5), rgba(0, 0, 0, 0.8)),url('../img/portfolio/RayximCover.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 #00fff2;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 400px;
+  }
+
+  .card-container .card-bg_2{
+    background-image: linear-gradient(rgba(107, 107, 107, 0.3), rgba(0, 0, 0, 0.3)),url('../img/portfolio/RichArtMuseum.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 #00fff2;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 400px;
+  }
+
+  .card-container .card-bg_3{
+    background-image: linear-gradient(rgba(107, 107, 107, 0.5), rgba(0, 0, 0, 0.8)), url('../img/portfolio/Ibridovirus.jpg');
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 8px 0 #00fff2;
@@ -183,7 +218,7 @@ h3{
   }
 
  
-  .card .fa-github{
+  .card-bg .fa-github{
     font-size: 2em;
     padding: 0;
     text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
@@ -271,7 +306,7 @@ footer {
 
 /*media*/
 @media (min-width: 240px) and (max-width: 576px){
-    #home{
+    #Home{
        margin-top: 50px;
        height: 200px;
     }
@@ -285,6 +320,10 @@ footer {
       h1{
         font-size: 1.5rem;
         text-align: center;
+    }
+
+    h2{
+        font-size: 2.5em;
     }
     
      h3{
@@ -361,12 +400,16 @@ footer {
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
-    #home {
+    #Home {
         height: 400px;
         margin-top: 30px;
     }
     h1 {
         font-size: 2rem;
+    }
+
+    h2{
+        font-size: 2.5em;
     }
     .button {
         font-size: 25px;
@@ -434,7 +477,7 @@ footer p{
 }
 
 @media (min-width: 900px ) and (max-width:1000px){
-    #home {
+    #Home {
       height: 500px; 
 
     }
