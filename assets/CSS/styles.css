@@ -49,12 +49,13 @@ border: none;
     margin-top: 50px;
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 900px;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url('../img/luna.jpg');
     
 }
 
@@ -72,11 +73,6 @@ color: #00fff2;
 }
 
 
-/*margin-top*/
-.sec-top{
-    text-align: center;
-    margin-top: 80px;
-}
 
 html, body {
     overflow-x: hidden;
@@ -112,6 +108,7 @@ h3{
     text-align: center;
     font-size: 2.5em;
     text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+    margin-top: 30px;
     
 }
 
@@ -122,27 +119,31 @@ h3{
 #About .contanier{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 #About .about-img img{
-    width: 350px;
+    width: 200px;
     border-radius: 50%;
-    margin-left: 3%;
+    margin-left: 10%;
+    margin-right: 20%;
 }
-#About .content{
-    margin-left: 30px;
-}
-#About .content h1, #Portfolio h1, #Contatti h1{
+
+#About .content h2, #Portfolio h2, #Contatti h2{
     font-size: 45px;
     color: #e2e2e2;
 }
-#About .content h1 span{
+#About .content h2 span{
     color: #00fff2;
 }
 
 #About .content p{
     color: #e2e2e2;
     line-height: 1.8;
-    margin-bottom:70px;
+    margin-left: 30px;
+}
+
+#Portfolio, #Contatti {
+    margin-top: 90px;
 }
 
 /*card-styling*/
@@ -248,13 +249,14 @@ label {
 		}
 
        .button_1{
-           
-           font-size: 20px;
+           float: right;
            margin-top: 30px;
+           font-size: 15px;
            border-radius: 30px;
-           padding: 10px 20px;
-           color: #1c1c1c;
+           padding: 5px 20px;
+           color: #ffffff;
            border:#00fff2 2px solid;
+           background-color: transparent;
            
         }
 
@@ -308,7 +310,7 @@ footer {
 @media (min-width: 240px) and (max-width: 576px){
     #Home{
        margin-top: 50px;
-       height: 200px;
+       height: 180px;
     }
 
     .navbar-brand img{
@@ -318,12 +320,12 @@ footer {
     
 
       h1{
-        font-size: 1.5rem;
+        font-size: 1.5em;
         text-align: center;
     }
 
     h2{
-        font-size: 2.5em;
+        font-size: 2em;
     }
     
      h3{
@@ -352,31 +354,21 @@ footer {
         font-size: 15px;
         padding: 5px 20px;
     }
-   
-    .button_1{
-        background-color: #00fff2;
-        box-shadow: 0 0 100px #00fff2;
-        border: none;
-        color: #1c1c1c;
-        font-size: 15px;
-        padding: 5px 20px;
-        margin: auto;
-    }
     
     #About .contanier{
         flex-direction: column;
-        text-align: center;
-        margin-left: 0;
-        margin-right: 5%;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10%;
+        
     }
     
     #About .about-img  img{
         margin-bottom: 20px;
         width: 100px;
-        margin: auto;
     }
         .button_1 {
-        font-size: 1em;
+        font-size: 0.8em;
         border: none;
         color: #1c1c1c;
         background-color: #00fff2;
@@ -389,13 +381,9 @@ footer {
         width: 100%;
         margin-top: 0;
     }
-
-    #Contatti {
-    margin-top: 20px;
-}
     
     footer p {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
@@ -422,22 +410,18 @@ footer {
 
     #About .contanier{
         flex-direction: column;
-        text-align: center;
         margin-left: 0;
         margin-right: 5%;
     }
 
     #About .about-img img{
-        width: 200px;
+        width: 150px;
     }
 
     #About p{
         font-size: 20px;
     }
 
-    .sec-top {
-        margin-top: 50px;
-    }
      h3{
         font-size: 2em;
     }
@@ -457,8 +441,8 @@ footer {
    }
 
   .button_1{
-    font-size: 25px;
-    padding: 10px 40px;
+    font-size: 15px;
+    padding: 5px 25px;
     background-color: #00fff2;
     box-shadow: 0 0 100px #00fff2;
     color: #1c1c1c;
@@ -476,9 +460,9 @@ footer p{
 }
 }
 
-@media (min-width: 900px ) and (max-width:1000px){
+@media (min-width: 900px ) and (max-width:1280px){
     #Home {
-      height: 500px; 
+      height: 700px; 
 
     }
 
@@ -496,23 +480,23 @@ footer p{
     }
 
     .button_1 {
-        padding: 15px 40px;
-        font-size: 25px;
+        font-size: 15px;
+        padding: 5px 20px;
         background-color: #00fff2;
         box-shadow: 0 0 100px #00fff2;
         color: #1c1c1c;
         border: none;
+        width: 80%;
     }
 
     #About .contanier{
         flex-direction: column;
-        text-align: center;
         margin-left: 0;
         margin-right: 5%;
     }
 
     #About .about-img img{
-        width: 200px;
+        width: 150px;
     }
 
     #About p{
