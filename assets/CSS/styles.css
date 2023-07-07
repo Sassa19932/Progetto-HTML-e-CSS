@@ -6,6 +6,10 @@
     transition: 0.3s;
 }
 
+a {
+    color:#00fff2;
+}
+
 /*body styling*/
 body{
     margin: 0;
@@ -184,6 +188,15 @@ h3{
     height: 400px;
   }
 
+  .card-container .card-bgCounter{
+    background-image: linear-gradient(rgba(107,107, 107, 0.5), rgba(0, 0, 0, 0.8)), url('../img/portfolio/imageMobile.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 #00fff2;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 400px;
+  }
   .card-container .card-bg_1{
     background-image: linear-gradient(rgba(107, 107, 107, 0.5), rgba(0, 0, 0, 0.8)),url('../img/portfolio/RayximCover.jpg');
     background-size: cover;
@@ -219,7 +232,7 @@ h3{
   }
 
  
-  .card-bg .fa-github{
+  .card-bg .fa-github, .card-bgCounter .fa-github{
     font-size: 2em;
     padding: 0;
     text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
@@ -234,7 +247,7 @@ h3{
 
   
 
-       /*form contatti*/
+    /*form contatti*/
 	input[type=text], select, textarea {
 			width: 100%;
 			padding: 12px;
