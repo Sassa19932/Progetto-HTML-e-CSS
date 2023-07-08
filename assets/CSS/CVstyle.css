@@ -13,12 +13,11 @@ body{
     line-height: 1.5;
     background-color: #000000;
     color: #1c1c1c;
-    font-size: 1.5em;
 }
 
 /*Container margin*/
 .container{
-    max-width: 1000px;
+    max-width: 900px;
     margin: 2rem auto;
     padding: 2rem;
     height: auto;
@@ -27,8 +26,6 @@ body{
 main {
     display: flex;
     justify-content: space-around;
-    margin: 2rem auto;
-    padding: 2rem;
 }
 /*header styling*/
 .header{
@@ -36,38 +33,43 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
 .header h1{
-    font-weight: bold;
+    color: white;
+    font-weight: 400;
+    font-size: 4em;
 }
 
-.header img{
+.personal-info p {
+ margin-left: 10%;
+ font-size: 0.8em;
+}
+
+.education p {
+    text-align: center;
+    font-size: 1em;
+}
+img{
 max-width: 120px;
 height: auto;
-margin-right: 2rem;
 border-radius: 50%;
+margin-top: 10%;
+margin-left: 20%;
 }
 
-.header span{
-    font-weight: bold;
-}
-/*personal-info e biography*/
-.personal-info h2, .biography h2{
-    font-size: 1.5em;
-    margin:0;
-}
 
 /* social media icons styling */
 .social-icons {
     font-size: 1em;
     cursor: pointer;
+    text-align: center;
 }
+
 .social-icons li{
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 5px;
 }
 .fa-instagram:hover, .fa-twitter:hover, .fa-linkedin-in:hover, .fa-artstation:hover, .fa-github:hover {
    color: #00fff2;
@@ -77,20 +79,14 @@ border-radius: 50%;
     margin:0;
 }
 /*skills styling*/
-
 .skills, .hobby{
-    margin-bottom: 2em;
+    margin-top: 4rem;
     max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-}
-
-.skills h2, .hobby h2{
-    font-size: 1.5em;
-    margin: 0 0 1rem;
 }
 
 .skills ul, .hobby ul{
@@ -103,121 +99,147 @@ border-radius: 50%;
 
 .skills li, .hobby li{
     margin-right: 1rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
     background-color: #000000;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
 }
 /*Education styling*/
-.education{
-    margin-bottom: 2em;
+
+ h2{
+    margin-top: 1em;
+    font-size: 2em;
+   text-align: center;
 }
 
- .education h2{
+ h3{
+    margin-top: 1em;
     font-size: 1.5em;
-    margin: 0 0 1rem;
+    text-align: center;
 }
 
- .diploma h3{
-    font-size: 1.5em;;
-    margin: 0 0 0.5rem;
-}
-
-.education .diploma p{
-    margin: 0;
+ .biography p{
+    font-size: 1em;
+    margin: 2em;
 }
 
 footer p {
     text-align: center;
     font-size: 0.8em;
     color:#000000;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10rem;
+    
 }
 
 .left {
 max-width: 1000px;
-background-color: blue;
+background-color: rgb(132, 189, 243);
 height: auto;
-text-align: center;
-font-size: 0.8rem;
 }
 .right {
     max-width: 600px;
     background-color: #eee;
     height: auto;
-    text-align: center;
-    font-size: 1rem;
     }
 /*Media*/
 @media screen and (max-width: 992px){
+
+    .container {
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+    }
     main {
         flex-direction: column;
     }
-    .right, .left {
-        max-width: 800px;
+
+    img{
+        margin-left: 40%;
     }
-    .header h1{
+    .personal-info p {
+        margin-left: 10em;
+        font-size: 1.5em;
+    }
+
+    .education p {
+        font-size: 1.5em;
+    }
+
+    .biography p {
+        font-size: 1.5em;
+    }
+
+    .social-icons {
         font-size: 2em;
     }
 
+    h2 {
+        font-size: 3em;
+    }
+
+    .skills li, .hobby li {
+        font-size: 1.5em;
+    }
+    .left, .right {
+        max-width: 900px;
+        
+    }
+
+    footer p{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width:576px){
+    .header h1{
+        color: white;
+        font-weight: 400;
+        font-size: 2.5em;
+    }
+    main {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        max-width: 300px;
+        margin: 0 auto;
+        
+    }
+    img{
+        max-width: 100px;
+        margin-left: 35%;
+    }
+    .personal-info p {
+        margin-left: 3em;
+        font-size: 1em;
+    }
 
     .social-icons {
         font-size: 1.5em;
     }
-  
 
-    .education h2, .skills h2, .personal-info h2, .hobby h2, .biography h2{
+    .education p {
+        font-size: 1em;
+    }
+
+    .biography p {
+        font-size: 1em;
+    }
+
+    .skills li, .hobby li{
+       margin-left: 10%;
+       font-size: 1em;
+    }
+
+    h2 {
         font-size: 1.5em;
-        margin: 0 0 1rem;
     }
 
-    .biography h2{
-        line-height: 1.2;
-    }
-    
-    .education .diploma h3{
-        font-size: 1.8rem;
-        margin: 0 0 0.5rem;
-    }
-
-}
-@media screen and (max-width:576px){
-    .right, .left {
-        max-width: 1600px;
-        font-size: 1.5rem;
-    }
-    .header h1{
+    h3{
         font-size: 1em;
     }
-
-    .header img{
-        max-width: 100px;
+    footer p{
+        font-size: 0.6em;
     }
-    .education h2, .skills h2, .personal-info h2, .hobby h2, .biography h2{
-        font-size: 1em;
-        margin: 0 0 1rem;
-    }
-
-    .biography h2{
-        line-height: 1.2;
-    }
-    
-    .education .diploma h3{
-        font-size: 1em;
-        margin: 0 0 0.5rem;
-    }
-   p {
-    font-size: 0.8em;
-   }
-
-   .social-icons {
-    font-size: 0.8em;
-   }
-
-   .skills li, .hobby li {
-    font-size: 0.9em;
-   }
 }
 
